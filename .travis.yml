@@ -1,12 +1,9 @@
 language: node_js
 node_js:
   - 8
-  - 10
+  - "10.16.3"
   - 12
-sudo: false
 after_success: npm run report && npm run coveralls
-addons:
-  firefox: 'latest'
 before_deploy:
   # Identifies `a.b.c-xxx.n` tags as pre-releases, and `a.b.c` as stable releases
   - |
@@ -21,9 +18,10 @@ deploy:
   - provider: npm
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    skip_cleanup: true
     tag: $(npm_dist_tag)
     on:
       tags: true
       repo: ariari-co/ariari-accounts-sdk
-      node: 10
+      node: 10.16.3
+addons:
+  firefox: 'latest'
