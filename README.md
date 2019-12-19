@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ariari-co/ariari-accounts-sdk.svg?branch=master)](https://travis-ci.com/ariari-co/ariari-accounts-sdk)
+[![Coverage Status](https://coveralls.io/repos/github/ariari-co/ariari-accounts-sdk/badge.svg?branch=master)](https://coveralls.io/github/ariari-co/ariari-accounts-sdk?branch=master)
 # Ariari Accounts SDK library
 
 Ariari Accounts SDK is a JavaScript library for Ariari Accounts API implementation.
@@ -10,11 +12,6 @@ Using npm:
 
 ```bash
 $ npm install ariari-accounts-sdk
-```
-Using bower:
-
-```bash
-$ bower install ariari-accounts-sdk
 ```
 
 ## Usage
@@ -108,6 +105,3 @@ Required: true
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
