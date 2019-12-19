@@ -7,3 +7,23 @@ sudo: false
 after_success: npm run report && npm run coveralls
 addons:
   firefox: 'latest'
+before_deploy:
+  # Identifies `a.b.c-xxx.n` tags as pre-releases, and `a.b.c` as stable releases
+  - |
+    function npm_dist_tag() {
+      if [[ "$TRAVIS_TAG" = *"-"* ]]; then
+        echo "next"
+      else
+        echo "latest"
+      fi
+    }
+deploy:
+  - provider: npm
+    email: manugarcia100@hotmail.com
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    tag: $(npm_dist_tag)
+    on:
+      tags: true
+      repo: ariari-co/ariari-accounts-sdk
+      node: 10

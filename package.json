@@ -21,7 +21,10 @@
     "test": "npm run test:web && npm run test:node",
     "mocha": "nyc mocha",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "preversion": "npm run test",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
   },
   "author": "Manuela Garcia",
   "license": "ISC",
