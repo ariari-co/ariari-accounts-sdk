@@ -1,0 +1,3 @@
+--bail
+--recursive
+--require ./test/mocha.js
