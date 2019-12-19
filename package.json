@@ -13,6 +13,9 @@
   "scripts": {
     "build:dev": "rm -rf ./dist && webpack --config webpack.dev.js",
     "build": "rm -rf ./dist && webpack --config webpack.prod.js",
+    "clean": "rm -rf ./.nyc_output ./node_modules/.cache ./coverage ./dist",
+    "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "report": "nyc -r text -r lcov report",
     "test:node": "npm run lint && npm run mocha",
     "test:web": "npm run lint && npm run build:dev && ./node_modules/karma/bin/karma start",
     "test": "npm run test:web && npm run test:node",
@@ -31,6 +34,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.0.9",
     "eslint": "^6.7.2",
     "karma": "^4.4.1",
     "karma-chai": "^0.1.0",
