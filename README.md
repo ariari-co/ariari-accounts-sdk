@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.com/ariari-co/ariari-accounts-sdk.svg?branch=master)](https://travis-ci.com/ariari-co/ariari-accounts-sdk)
-[![Coverage Status](https://coveralls.io/repos/github/ariari-co/ariari-accounts-sdk/badge.svg?branch=master)](https://coveralls.io/github/ariari-co/ariari-accounts-sdk?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/ariari-co/ariari-accounts-sdk/badge.svg)](https://coveralls.io/github/ariari-co/ariari-accounts-sdk)
+[![David](https://img.shields.io/david/ariari-co/ariari-accounts-sdk.svg)](https://david-dm.org/ariari-co/ariari-accounts-sdk)
+[![David](https://img.shields.io/david/dev/ariari-co/ariari-accounts-sdk.svg)](https://david-dm.org/ariari-co/ariari-accounts-sdk?type=dev)
 # Ariari Accounts SDK library
 
 Ariari Accounts SDK is a JavaScript library for Ariari Accounts API implementation.
