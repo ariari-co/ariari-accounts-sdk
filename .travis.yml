@@ -20,7 +20,7 @@ before_deploy:
 deploy:
   - provider: npm
     email: manugarcia100@hotmail.com
-    api_key: $NPM_TOKEN
+    api_key: "$NPM_TOKEN"
     skip_cleanup: true
     tag: $(npm_dist_tag)
     on:
