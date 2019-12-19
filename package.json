@@ -1,6 +1,6 @@
 {
   "name": "ariari-accounts-sdk",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Sdk to create ariari accounts",
   "main": "./lib/index.js",
   "directories": {
